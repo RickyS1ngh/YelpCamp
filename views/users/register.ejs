@@ -1,0 +1,61 @@
+<% layout("layout/boilerplate")%>
+<div class="row">
+  <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+    <div class="card shadow">
+      <div class="card-body">
+        <img
+          src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+          class="card-img-top"
+          alt=""
+        />
+        <h5 class="card-title">Register</h5>
+        <form
+          action="/register"
+          method="POST"
+          novalidate
+          class="validated-form"
+        >
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input
+              class="form-control"
+              type="text"
+              name="username"
+              id="username"
+              required
+              autofocus
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+            <div class="d-grid gap-2">
+              <button class="btn btn-success">Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
